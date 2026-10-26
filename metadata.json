@@ -1,0 +1,10 @@
+{
+  "name": "Remix Remix Remix Analista Bravo",
+  "description": "Correção Oficial Aviator VIP - Processador de histórico CSV e gerador de lista de sinais e assertividade para Telegram.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

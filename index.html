@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Ensure window.fetch is writable and has a setter to prevent "Cannot set property fetch of #<Window> which has only a getter"
+      (function() {
+        try {
+          var originalFetch = window.fetch ? window.fetch.bind(window) : undefined;
+          var currentFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return currentFetch;
+            },
+            set: function(fn) {
+              currentFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // Ignore
+        }
+      })();
+    </script>
+    <title>Remix Analista Bravo – Correção Oficial Aviator VIP</title>
+    <meta name="description" content="Correção Oficial Aviator VIP - Processador de histórico CSV e gerador de lista de sinais e assertividade para Telegram." />
+    
+    <!-- OpenGraph / Social Sharing Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Remix Analista Bravo – Correção Oficial Aviator VIP" />
+    <meta property="og:description" content="Monitoramento 24h com Inteligência Artificial dos 3 gráficos oficiais Aviator BETBRABO, lista 10x automática e auditoria de assertividade para Telegram." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Remix Analista Bravo – Correção Oficial Aviator VIP" />
+    <meta name="twitter:description" content="Monitoramento 24h com Inteligência Artificial dos 3 gráficos oficiais Aviator BETBRABO, lista 10x automática e auditoria de assertividade para Telegram." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0b0a10] text-slate-100 min-h-screen font-sans selection:bg-purple-600 selection:text-white antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
